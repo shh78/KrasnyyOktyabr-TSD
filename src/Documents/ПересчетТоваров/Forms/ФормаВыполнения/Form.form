@@ -768,6 +768,52 @@
             </textColor>
           </extInfo>
         </items>
+        <items xsi:type="form:FormField">
+          <name>СписокТоваровСумма</name>
+          <id>86</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>ФормаСписокТоваров.Сумма</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СписокТоваровСуммаРасширеннаяПодсказка</name>
+            <id>88</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокТоваровСуммаКонтекстноеМеню</name>
+            <id>87</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>LabelField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:LabelFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1004,7 +1050,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>СписокТоваровСтрокаПоиска</source>
+      <source>СписокТоваров</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -1043,7 +1089,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>СписокТоваровСостояниеПросмотра</source>
+      <source>СписокТоваров</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -1082,7 +1128,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>СписокТоваровУправлениеПоиском</source>
+      <source>СписокТоваров</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -1268,6 +1314,62 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>СуммаДокумента</name>
+    <id>89</id>
+    <title>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>ФормаСуммаДокумента</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>СуммаДокументаРасширеннаяПодсказка</name>
+      <id>91</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>СуммаДокументаКонтекстноеМеню</name>
+      <id>90</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <readOnly>true</readOnly>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -1435,7 +1537,8 @@
 	УдалитьШтрихкодыТоваровСХарактеристиками.УникальныйИдентификаторХарактеристики КАК УникальныйИдентификаторХарактеристики,
 	СУММА(УдалитьШтрихкодыТоваровСХарактеристиками.Количество) КАК КоличествоФакт,
 	УдалитьШтрихкодыТоваровСХарактеристиками.ДатаИзменения КАК ДатаИзменения,
-	МАКСИМУМ(УдалитьШтрихкодыТоваровСХарактеристиками.НаименованиеХарактеристики) КАК НаименованиеХарактеристики
+	МАКСИМУМ(УдалитьШтрихкодыТоваровСХарактеристиками.НаименованиеХарактеристики) КАК НаименованиеХарактеристики,
+	УдалитьШтрихкодыТоваровСХарактеристиками.Сумма КАК Сумма
 ПОМЕСТИТЬ ОбработанныеТовары
 ИЗ
 	РегистрСведений.УдалитьШтрихкодыТоваровСХарактеристиками КАК УдалитьШтрихкодыТоваровСХарактеристиками
@@ -1446,7 +1549,8 @@
 СГРУППИРОВАТЬ ПО
 	УдалитьШтрихкодыТоваровСХарактеристиками.Номенклатура,
 	УдалитьШтрихкодыТоваровСХарактеристиками.УникальныйИдентификаторХарактеристики,
-	УдалитьШтрихкодыТоваровСХарактеристиками.ДатаИзменения
+	УдалитьШтрихкодыТоваровСХарактеристиками.ДатаИзменения,
+	УдалитьШтрихкодыТоваровСХарактеристиками.Сумма
 
 ИНДЕКСИРОВАТЬ ПО
 	Номенклатура,
@@ -1479,7 +1583,8 @@
 	ЕСТЬNULL(ТоварыВДокументе.КоличествоУчет, 0) КАК КоличествоУчет,
 	МАКСИМУМ(ЕСТЬNULL(ОбработанныеТовары.ДатаИзменения, ДАТАВРЕМЯ(1, 1, 1))) КАК ДатаОбработки,
 	ЕСТЬNULL(ТоварыВДокументе.НомерСтроки, -1) КАК НомерСтроки,
-	ОбработанныеТовары.УникальныйИдентификаторХарактеристики КАК УникальныйИдентификаторХарактеристики
+	ОбработанныеТовары.УникальныйИдентификаторХарактеристики КАК УникальныйИдентификаторХарактеристики,
+	ЕСТЬNULL(ОбработанныеТовары.Сумма, 0) КАК Сумма
 ИЗ
 	ОбработанныеТовары КАК ОбработанныеТовары
 		ПОЛНОЕ СОЕДИНЕНИЕ ТоварыВДокументе КАК ТоварыВДокументе
@@ -1491,7 +1596,8 @@
 	ЕСТЬNULL(ОбработанныеТовары.НаименованиеХарактеристики, ТоварыВДокументе.НаименованиеХарактеристики),
 	ЕСТЬNULL(ТоварыВДокументе.КоличествоУчет, 0),
 	ЕСТЬNULL(ТоварыВДокументе.НомерСтроки, -1),
-	ОбработанныеТовары.УникальныйИдентификаторХарактеристики</queryText>
+	ОбработанныеТовары.УникальныйИдентификаторХарактеристики,
+	ЕСТЬNULL(ОбработанныеТовары.Сумма, 0)</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
@@ -1570,6 +1676,18 @@
         <dataPath>УникальныйИдентификаторХарактеристики</dataPath>
         <field>УникальныйИдентификаторХарактеристики</field>
       </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Сумма</dataPath>
+        <field>Сумма</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Сумма</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
       <parameters>
         <name>Документ</name>
         <title>
@@ -1645,6 +1763,27 @@
     <id>8</id>
     <valueType>
       <types>Boolean</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
+  <attributes>
+    <name>ФормаСуммаДокумента</name>
+    <title>
+      <key>ru</key>
+      <value>Форма сумма документа</value>
+    </title>
+    <id>6</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
     </valueType>
     <view>
       <common>true</common>

@@ -12,12 +12,13 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="1dc7fc70-f323-433e-8475-9b480fed1f07"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="e8300064-fd72-42f4-8cf9-5d6432a1e012"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="83c28519-dbf1-477c-885b-6a72f186339d"/>
+  <configurationExtensionCompatibilityMode>8.3.24</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <usePurposes>MobileDevice</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>ОАО &quot;Красный Октябрь&quot;</vendor>
-  <version>12.0.2</version>
+  <version>13.0.0</version>
   <help>
     <pages>
       <lang>ru</lang>

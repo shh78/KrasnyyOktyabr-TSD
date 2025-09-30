@@ -565,7 +565,7 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:LabelFieldExtInfo">
-          <maxWidth>14</maxWidth>
+          <maxWidth>20</maxWidth>
           <autoMaxHeight>true</autoMaxHeight>
         </extInfo>
       </items>
@@ -836,7 +836,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>СписокНоменклатурСтрокаПоиска</source>
+      <source>СписокНоменклатур</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -875,7 +875,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>СписокНоменклатурСостояниеПросмотра</source>
+      <source>СписокНоменклатур</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -914,7 +914,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>СписокНоменклатурУправлениеПоиском</source>
+      <source>СписокНоменклатур</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
